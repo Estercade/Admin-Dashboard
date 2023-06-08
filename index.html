@@ -8,12 +8,56 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <div class="header"></div>
-    <div class="sidebar"></div>
+    <div class="header">
+        <div class="search-bar">
+            <button type="button" id="search-button"><img src="./images/magnify.svg" alt="search button" width="20rem"></button>
+            <input type="text" id="search-box" placeholder="Search" />
+        </div>
+        <div class="user">
+            <button type="button" id="notification-button"><img src="./images/bell-badge-outline.svg"alt="notifications" width="20rem"></button>
+            <button type="button"><img src="" class="profile-pic" alt="profile picture"></button>
+            <div class="user-info">Dovahkiin</div>
+        </div>
+        <div class="intro">
+            <img src="" class="profile-pic" alt="profile picture">
+            <h5 class="intro-message">Hey, you. You're finally awake.</h4>
+            <h1 class="intro-user">Dovahkiin</h1>
+        </div>
+        <div class="project-controls">
+            <ul>
+                <li class="new">New</li>
+                <li class="upload">Upload</li>
+                <li class="share">Share</li>
+            </ul>    
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="dashboard-logo">Logo</div>
+        <div class="nav">
+            <ul>
+                <li class="home">Home</li>
+                <li class="profile">Profile</li>
+                <li class="messages">Messages</li>
+                <li class="history">History</li>
+                <li class="tasks">Tasks</li>
+                <li class="communities">Communities</li>
+                <br>
+                <li class="settings">Settings</li>
+                <li class="support">Support</li>
+                <li class="privacy">Privacy</li>
+            </ul>
+        </div>
+    </div>
     <div class="main-content">
-        <div class="projects"></div>
-        <div class="announcements"></div>
-        <div class="trending"></div>
+        <div class="projects">
+            <h3>Projects</h3>
+        </div>
+        <div class="announcements">
+            <h3>Announcements</h3>
+        </div>
+        <div class="trending">
+            <h3>Trending</h3>
+        </div>
     </div>
 </body>
 </html>

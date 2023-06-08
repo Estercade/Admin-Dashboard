@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     border: 1px solid blue;
+    list-style-type: none;
 }
 
 body {
@@ -78,7 +79,6 @@ body {
 .header .project-controls ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    list-style-type: none;
 }
 
 .sidebar { 
@@ -93,16 +93,31 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-auto-rows: 1fr 1fr;
+    gap: 1rem;
 }
 
 .main-content .projects {
     grid-area: 1 / 1 / 3 / 2;
 }
 
+.main-content .projects .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
 .main-content .announcements {
     grid-area: 1 / 2 / 2 / 3;
 }
 
+.main-content .announcements .announcements-container ul li {
+    margin-bottom: 1rem;
+}
+
 .main-content .trending {
     grid-area: 2 / 2 / 3 / 3;
+}
+
+.main-content .trending .trending-container ul li {
+    margin-bottom: 1rem;
 }

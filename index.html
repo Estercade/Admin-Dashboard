@@ -15,36 +15,36 @@
         </div>
         <div class="user">
             <button type="button" id="notification-button"><img src="./images/bell-badge-outline.svg"alt="notifications" width="20rem"></button>
-            <button type="button"><img src="" class="profile-pic" alt="profile picture"></button>
-            <div class="user-info">Dovahkiin</div>
+            <button type="button" class="user-profile-button"><img src="./images/Dovahkiin profile picture.jpg" width="40rem" class="profile-pic" alt="profile picture"></button>
+            <div class="user-info"><h3>Dovahkiin</h3></div>
         </div>
         <div class="intro">
-            <img src="" class="profile-pic" alt="profile picture">
+            <img src="./images/Dovahkiin profile picture.jpg" width="80rem" class="profile-pic" alt="profile picture">
             <h5 class="intro-message">Hey, you. You're finally awake.</h4>
             <h1 class="intro-user">Dovahkiin</h1>
         </div>
         <div class="project-controls">
             <ul>
-                <li class="new">New</li>
-                <li class="upload">Upload</li>
-                <li class="share">Share</li>
+                <li class="new"><button class="new-button">New</button></li>
+                <li class="upload"><button class="upload-button">Upload</button></li>
+                <li class="share"><button class="share-button">Share</button></li>
             </ul>    
         </div>
     </div>
     <div class="sidebar">
-        <div class="dashboard-logo">Logo</div>
+        <div class="whiterun-logo"><img src="./images/view-dashboard.svg" width="40rem" alt="dashboard logo" class="white-icon-filter">Dashboard</div>
         <div class="nav">
             <ul>
-                <li class="home">Home</li>
-                <li class="profile">Profile</li>
-                <li class="messages">Messages</li>
-                <li class="history">History</li>
-                <li class="tasks">Tasks</li>
-                <li class="communities">Communities</li>
+                <li class="home"><img src="./images/home.svg" width="30rem" alt="home icon" class="white-icon-filter">Home</li>
+                <li class="profile"><img src="./images/card-account-details.svg" width="30rem" alt="profile icon" class="white-icon-filter">Profile</li>
+                <li class="messages"><img src="./images/message.svg" width="30rem" alt="messages icon" class="white-icon-filter">Messages</li>
+                <li class="history"><img src="./images/history.svg" width="30rem" alt="history icon" class="white-icon-filter">History</li>
+                <li class="tasks"><img src="./images/clipboard-list.svg" width="30rem" alt="tasks icon" class="white-icon-filter">Tasks</li>
+                <li class="communities"><img src="./images/account-group.svg" width="30rem" alt="communities icon" class="white-icon-filter">Communities</li>
                 <br>
-                <li class="settings">Settings</li>
-                <li class="support">Support</li>
-                <li class="privacy">Privacy</li>
+                <li class="settings"><img src="./images/cog.svg" width="30rem" alt="settings icon" class="white-icon-filter">Settings</li>
+                <li class="support"><img src="./images/account-question.svg" width="30rem" alt="support icon" class="white-icon-filter">Support</li>
+                <li class="privacy"><img src="./images/shield-lock.svg" width="30rem" alt="privacy icon" class="white-icon-filter">Privacy</li>
             </ul>
         </div>
     </div>
@@ -53,65 +53,120 @@
             <h3>Your Projects</h3>
             <div class="card-container">
                 <div class="card" id="card1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis. Lorem ipsum dolor sit amet consectetur.
+                    <div class="card-text">
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis. Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="card-controls-container">
+                        <button class="favorite-button"><img src="./images/star-plus-outline.svg" width="20rem" alt="favorite button"></button>
+                        <button class="seen-button"><img src="./images/eye-plus-outline.svg" width="20rem" alt="seen button"></button>
+                        <button class="share-button"><img src="./images/share-variant-outline.svg" width="20rem" alt="share button"></button>
+                    </div>
                 </div>
                 <div class="card" id="card2">
-                    Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Arcu odio ut sem nulla. Sollicitudin tempor id eu nisl nunc mi ipsum.
+                    <div class="card-text">
+                        <h4>Posuere sollicitudin</h4>
+                        <p>Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Arcu odio ut sem nulla. Sollicitudin tempor id eu nisl nunc mi ipsum.</p>
+                    </div>
+                    <div class="card-controls-container">
+                        <button class="favorite-button"><img src="./images/star-plus-outline.svg" width="20rem" alt="favorite button"></button>
+                        <button class="seen-button"><img src="./images/eye-plus-outline.svg" width="20rem" alt="seen button"></button>
+                        <button class="share-button"><img src="./images/share-variant-outline.svg" width="20rem" alt="share button"></button>
+                    </div>
                 </div>
                 <div class="card" id="card3">
-                    Id faucibus nisl tincidunt eget nullam non nisi est sit. Metus aliquam eleifend mi in. Lacus vel facilisis volutpat est.
+                    <div class="card-text">
+                        <h4>Id faucibus</h4>
+                        <p>Id faucibus nisl tincidunt eget nullam non nisi est sit. Metus aliquam eleifend mi in. Lacus vel facilisis volutpat est.</p>
+                    </div>
+                    <div class="card-controls-container">
+                        <button class="favorite-button"><img src="./images/star-plus-outline.svg" width="20rem" alt="favorite button"></button>
+                        <button class="seen-button"><img src="./images/eye-plus-outline.svg" width="20rem" alt="seen button"></button>
+                        <button class="share-button"><img src="./images/share-variant-outline.svg" width="20rem" alt="share button"></button>
+                    </div>
                 </div>
                 <div class="card" id="card4">
-                    Ac odio tempor orci dapibus ultrices in iaculis nunc. Ac turpis egestas maecenas pharetra. Ipsum faucibus vitae aliquet nec ullamcorper sit amet.
+                    <div class="card-text">
+                        <h4>Ac odio</h4>
+                        <p>Ac odio tempor orci dapibus ultrices in iaculis nunc. Ac turpis egestas maecenas pharetra. Ipsum faucibus vitae aliquet nec ullamcorper sit amet.</p>
+                    </div>
+                    <div class="card-controls-container">
+                        <button class="favorite-button"><img src="./images/star-plus-outline.svg" width="20rem" alt="favorite button"></button>
+                        <button class="seen-button"><img src="./images/eye-plus-outline.svg" width="20rem" alt="seen button"></button>
+                        <button class="share-button"><img src="./images/share-variant-outline.svg" width="20rem" alt="share button"></button>
+                    </div>
                 </div>
                 <div class="card" id="card5">
-                    Fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Pretium vulputate sapien nec sagittis aliquam. Iaculis at erat pellentesque adipiscing commodo elit.
+                    <div class="card-text">
+                        <h4>Fermentum odio</h4>
+                        <p>Fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Pretium vulputate sapien nec sagittis aliquam. Iaculis at erat pellentesque adipiscing commodo elit.</p>
+                    </div>
+                    <div class="card-controls-container">
+                        <button class="favorite-button"><img src="./images/star-plus-outline.svg" width="20rem" alt="favorite button"></button>
+                        <button class="seen-button"><img src="./images/eye-plus-outline.svg" width="20rem" alt="seen button"></button>
+                        <button class="share-button"><img src="./images/share-variant-outline.svg" width="20rem" alt="share button"></button>
+                    </div>
                 </div>
                 <div class="card" id="card6">
-                    In hac habitasse platea dictumst vestibulum. A erat nam at lectus urna. Enim facilisis gravida neque convallis a cras semper auctor neque.
+                    <div class="card-text">
+                        <h4>In hac</h4>
+                        <p>In hac habitasse platea dictumst vestibulum. A erat nam at lectus urna. Enim facilisis gravida neque convallis a cras semper auctor neque.</p>
+                    </div>
+                    <div class="card-controls-container">
+                        <button class="favorite-button"><img src="./images/star-plus-outline.svg" width="20rem" alt="favorite button"></button>
+                        <button class="seen-button"><img src="./images/eye-plus-outline.svg" width="20rem" alt="seen button"></button>
+                        <button class="share-button"><img src="./images/share-variant-outline.svg" width="20rem" alt="share button"></button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="announcements">
-            <h3>Announcements</h3>
-            <div class="announcements-container">
-                <ul>
-                    <li>
-                        <h4>Eu turpis</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </li>
-                    <li>
-                        <h4>Egestas pretium</h4>
-                        <p>Aliquet lectus proin nibh nisl condimentum id venenatis a.</p>
-                    </li>
-                    <li>
-                        <h4>Aenean pharetra</h4>
-                        <p>Praesent elementum facilisis leo vel fringilla est ullamcorper eget.</p>
-                    </li>
-                </ul>
+        <div class="announcements-trending-container">
+            <div class="announcements">
+                <h3>Announcements</h3>
+                <div class="announcements-container">
+                    <ul>
+                        <li>
+                            <h4>Eu turpis</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <h4>Egestas pretium</h4>
+                            <p>Aliquet lectus proin nibh nisl condimentum id venenatis a.</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <h4>Aenean pharetra</h4>
+                            <p>Praesent elementum facilisis leo vel fringilla est ullamcorper eget.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="trending">
-            <h3>Trending</h3>
-            <div class="trending-container">
-                <ul>
-                    <li>
-                        <p>@stormcloak</p>
-                        <p>Ralof</p>
-                    </li>
-                    <li>
-                        <p>@waifu4eva</p>
-                        <p>Lydia</p>
-                    </li>
-                    <li>
-                        <p>@arrowknee</p>
-                        Ex-adventurer
-                    </li>
-                    <li>
-                        <p>@dragonzrool</p>
-                        Alduin
-                    </li>
-                </ul>
+            <div class="trending">
+                <h3>Trending</h3>
+                <div class="trending-container">
+                    <ul>
+                        <li>
+                            <p>@stormcloak</p>
+                            <p>Ralof</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <p>@waifu4eva</p>
+                            <p>Lydia</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <p>@arrowknee</p>
+                            Ex-adventurer
+                            <hr>
+                        </li>
+                        <li>
+                            <p>@dragonzrool</p>
+                            Alduin
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

@@ -2,26 +2,40 @@
     --bgcolor: white;
 }
 
+@font-face {
+    font-family: "EB Garamond";
+    src: url("../fonts/ebgaramond-variablefont_wght-webfont.woff") format('woff'),
+         url("../fonts/ebgaramond-variablefont_wght-webfont.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
     padding: 0;
     margin: 0;
-    border: 1px solid blue;
     list-style-type: none;
+    font-family: "EB Garamond", sans-serif;
 }
 
 body {
-    height: 99vh;
+    height: 100%;
     display: grid;
     grid-template-rows: 1fr 4fr;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 15rem 3fr;
 }
 
 .header {
     grid-area: 1 / 2 / 2 / -1;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr) 20rem;
     align-items: center;
+    padding: 1rem;
+    
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(160, 160, 160, 0.3);
+    z-index: 2;
 }
 
 .header .search-bar {
@@ -38,62 +52,139 @@ body {
 }
 
 #search-box {
-    width: max(50px, 40vw);
+    height: 1.8rem;
+    width: min(800px, 30vw);
+    max-width: 
     align-self: center;
+    padding: 0 0.5rem;
+
+    border: none;
+    border-radius: 3rem;
+    background-color: #dbdbdb;
 }
 
 #notification-button {
-    border: none;
+    width: 2rem;
+    height: 2rem;
+
     background: none;
-    margin-top: 0.3rem;
+
+    border: none;
+    align-self: center;
+    justify-self: right;
+}
+
+.profile-pic {
+    border-radius: 5rem;
 }
 
 .header .user {
     grid-area: 1 / 3 / 2 / 4;
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 3fr;
-    justify-content: space-between;
+    grid-template-columns: 1fr 6rem 3fr;
+    align-self: end;
 }
 
 .header .user-info {
-    text-align: center;
+    text-align: left;
     align-self: center;
 }
 
 .header .intro {
-    grid-area: 2 / 1 / 3 / 3;
+    grid-area: 2 / 1 / 4 / 3;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 5rem 1fr;
     grid-template-rows: 1fr 1fr;
-    align-items: center;
+    column-gap: 1rem;
+
+    padding: 1rem;
+}
+
+.header .intro-message {
+    align-self: end;
+}
+
+.header .intro-user {
+    align-self: start;
 }
 
 .header .intro .profile-pic {
     grid-area: 1 / 1 / 3 / 2;
 }
 
+.header .user .user-profile-button {
+    background: none;
+    border: none;
+}
+
 .header .project-controls {
-    grid-area: 2 / 3 / 3 / 4;
+    grid-area: 2 / 3 / 4 / 4;
+}
+
+.header .project-controls button {
+    border-radius: 2rem;
+    height: 2rem;
+    width: 5rem;
+    
+    font-size: 1rem;
+    font-weight: bolder;
+
+    color: white;
+    background-color: #888888;
 }
 
 .header .project-controls ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
 
 .sidebar { 
     grid-area: 1 / 1 / 3 / 2;
+
     display: grid;
-    gap: 3vh;
     grid-template-rows: 1fr 12fr;
+
+    padding: 1rem;
+
+    background-color: #888888;
+
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.sidebar .nav ul li {
+    margin: 0.4rem 0;
+    font-size: 1.2rem;
+}
+
+.sidebar img {
+    position: relative;
+    margin-right: 0.5rem;
+    top: 0.5rem;
+}
+
+.sidebar .nav ul li img {
+    margin: 0 0.5rem 0 0.7rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+/* Convert SVG icons to white color */
+.white-icon-filter {
+    filter: invert(100%);
 }
 
 .main-content {
     grid-area: 2 / 2 / -1 / -1;
+
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-auto-rows: 1fr 1fr;
     gap: 1rem;
+    padding: 1rem;
+
+    background-color: #dbcfbd;
 }
 
 .main-content .projects {
@@ -106,8 +197,42 @@ body {
     gap: 1rem;
 }
 
-.main-content .announcements {
+.main-content .card {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 2rem;
+
+    gap: 1rem;
+    background-color: #93a5aa;
+}
+
+.main-content .card .card-controls-container {
+    justify-self: right;
+}
+
+.main-content .card .card-controls-container button {
+    border: none;
+    background: none;
+    margin: 0 0.5rem;
+}
+
+.main-content .announcements-trending-container {
     grid-area: 1 / 2 / 2 / 3;
+
+    display: grid;
+    gap: 1rem;
+}
+
+.main-content .announcements {
+    border-radius: 0.5rem;
+}
+
+.main-content .announcements .announcements-container {
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    background-color: #93a5aa;
 }
 
 .main-content .announcements .announcements-container ul li {
@@ -115,9 +240,25 @@ body {
 }
 
 .main-content .trending {
-    grid-area: 2 / 2 / 3 / 3;
+    border-radius: 0.5rem;
+}
+
+.main-content .trending .trending-container {
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    background-color: #93a5aa;
 }
 
 .main-content .trending .trending-container ul li {
     margin-bottom: 1rem;
+}
+
+.main-content .announcements hr,
+.main-content .trending hr {
+    margin-top: 1rem;
+
+    height: 1px;
+    border: none;
+    background-color: black;
 }

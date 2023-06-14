@@ -4,9 +4,7 @@ This project was made following the instructions and specifications for [The Odi
 
 ## Description
 
-The goal of this project is to create a full dashboard using a combination of HTML5, CSS3, and JS ES6 with focus on the usage of CSS Grid. All functionality will be implemented using Vanilla JS. This program is optimized for use with Google Chrome and other Chromium-based browsers.
-
-### Features
+The goal of this project is to create a full dashboard using a combination of HTML5 and CSS3 with focus on the usage of CSS Grid only. This program is optimized for use with Google Chrome and other Chromium-based browsers.
 
 ## Built using
 
@@ -20,6 +18,7 @@ The goal of this project is to create a full dashboard using a combination of HT
 
 - Visual Studio Code
 - Git and GitHub
+- GIMP
 
 ## Author
 
@@ -28,6 +27,12 @@ Wilson Lee
 
 ## Credits
 
+* Icon logos taken from [Pictogrammers](https://pictogrammers.com/library/mdi/)
+* [EB Garamond font from Google Fonts](https://fonts.google.com/specimen/EB+Garamond)
+* [Webfont generator by Fontsquirrel](https://www.fontsquirrel.com/tools/webfont-generator)
+* Profile picture generated using [artflow.ai](https://app.artflow.ai/) and edited using [GIMP](https://www.gimp.org/)
+
 ## Acknowledgments
 
 * [The Odin Project](https://www.theodinproject.com/)
+* Inspiration taken from The Elder Scrolls V: Skyrim by Bethesda Softworks
